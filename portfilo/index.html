@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Danish Aliyabadi | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* ===== GLOBAL ===== */
+body{
+    font-family:'Segoe UI', sans-serif;
+    margin:0;
+    color:#fff;
+    background:#000;
+    scroll-behavior:smooth;
+}
+
+/* ===== STAR BACKGROUND ===== */
+#starCanvas{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    background:rgba(0,0,0,0.8);
+}
+
+/* ===== HERO ===== */
+#home{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    text-align:center;
+}
+
+/* ===== PROFILE IMAGE ===== */
+.profile-img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #0d6efd;
+}
+
+/* ===== SECTIONS ===== */
+section{
+    padding:80px ;
+}
+.section-title{
+    font-weight:700;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+/* ===== SKILLS ===== */
+.skill-bar{
+    background:#2c2c2c;
+    border-radius:20px;
+    overflow:hidden;
+}
+.skill-bar div{
+    background:#0d6efd;
+    padding:6px 15px;
+    font-weight:600;
+}
+
+/* ===== CARDS ===== */
+.project-box{
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+/* ===== CONTACT ===== */
+.contact-icon a{
+    text-decoration:none;
+    color:#fff;
+}
+.contact-icon i{
+    font-size:28px;
+    color:#0d6efd;
+}
+form input, form textarea{
+    background:#111;
+    color:#fff;
+    border:1px solid #333;
+}
+form input::placeholder, form textarea::placeholder{
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<!-- STAR CANVAS -->
+<canvas id="starCanvas"></canvas>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container">
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+<div class="container">
+<img src="xyz.jpeg" class="profile-img mb-4">
+<h1>Danish Aliyabadi</h1>
+<h4 id="typing"></h4>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="container">
+<h2 class="section-title">About Me</h2>
+<p class="text-center">
+ I am a final-year Information Science Engineering student with a strong foundation in full-stack web development, including HTML, CSS, JavaScript, React, Node.js, and MongoDB. During my academic projects, I have built web applications such as a Resume Builder using the MERN stack and other mini-projects that strengthened my problem-solving and coding skills. I enjoy creating responsive, user-friendly interfaces and scalable backend systems that deliver real-world solutions. I am eager to apply my technical knowledge in a professional environment, learn from industry experts, and contribute to impactful projects while continuously improving my skills  
+</p>
+<ul class="list-unstyled text-center">
+<li><b>Birthday:</b>07 April 2004</li>
+<br>
+<li><b>Age:</b>21 </li>
+<br>
+<li><b>Phone:</b>9380725316</li>
+<br>
+<li><b>Email:</b>danishaliyabadi786@gmail.com</li>
+<br>
+<li><b>Degree:</b>Bachelor of Engineering</li>
+</ul>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<div class="container">
+<h2 class="section-title">Skills</h2>
+
+<p>HTML</p>
+<div class="skill-bar mb-3"><div style="width:90%">95%</div></div>
+
+<p>CSS</p>
+<div class="skill-bar mb-3"><div style="width:85%">92%</div></div>
+
+<p>JavaScript</p>
+<div class="skill-bar mb-3"><div style="width:80%">90%</div></div>
+
+<p>React</p>
+<div class="skill-bar mb-3"><div style="width:75%">85%</div></div>
+
+<p>Node.js & MongoDB</p>
+<div class="skill-bar mb-3"><div style="width:70%">80%</div></div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<div class="container">
+<h2 class="section-title">Projects</h2>
+
+<div class="project-box">
+<h5>Resume Builder (MERN Stack)</h5>
+<p>This is a web application built using MongoDB, Express, React, and Node.js that allows users to create professional resumes online. Users can input personal details, education, skills, and projects, and the app generates a formatted resume instantly. It also provides save, edit, and download functionality, making it easy to manage multiple resumes efficiently.</p>
+</div>
+
+<div class="project-box">
+<h5>Blood Bank Management System</h5>
+<p>This web application helps manage blood donors, blood requests, and inventory efficiently. Users can register as donors, view blood availability, and request required blood types. The system streamlines operations for blood banks, ensuring timely access to blood and reducing manual workload.</p>
+</div>
+
+<div class="project-box">
+<h5>Online Bus Ticket Booking</h5>
+<p>This web application allows users to search for buses, select seats, and book tickets online. It provides real-time availability, booking confirmation, and easy payment options. The system streamlines ticket reservations, making travel planning faster and more convenient.</p>
+</div>
+
+<div class="project-box">
+<h5>Smart Neuroscan: Tackling Late Diagnosis of Stroke and Tumors using Deep Learning (Major Project)</h5>
+<p>Smart Neuroscan is a deep learning–based medical imaging system designed to assist in the early detection of brain stroke and tumors. The project uses convolutional neural networks (CNN) to analyze MRI and CT scan images and identify abnormal patterns with high accuracy. It aims to reduce delays in diagnosis by providing faster and more reliable results to medical professionals. The system improves decision-making by supporting doctors with AI-driven insights. This project highlights the application of machine learning and deep learning techniques in real-world healthcare solutions.</p>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="container">
+<h2 class="section-title">Contact Me</h2>
+
+<div class="row text-center mb-4">
+<div class="col contact-icon">
+<a href="tel:9380725316"><i class="fa fa-phone"></i><p>Call</p></a>
+</div>
+<div class="col contact-icon">
+<a href="mailto:danishaliyabadi786@gmail.com"><i class="fa fa-envelope"></i><p>Email</p></a>
+</div>
+<div class="col contact-icon">
+<a href="https://www.linkedin.com/in/danish-aliyabadi7404?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fa-brands fa-linkedin"></i><p>LinkedIn</p></a>
+</div>
+<div class="col contact-icon">
+<a href="https://www.instagram.com/0704_danish?igsh=cDVtdGFhZTFqcTAx" target="_blank"><i class="fa-brands fa-instagram"></i><p>Instagram</p></a>
+</div>
+<div class="col contact-icon">
+<a href="https://maps.app.goo.gl/Y7GYPVYBDRqM1mgVA?g_st=ac" target="_blank"><i class="fa fa-location-dot"></i><p>Location</p></a>
+</div>
+</div>
+
+<form>
+<div class="row">
+<div class="col-md-6 mb-3"><input class="form-control" placeholder="Your Name"></div>
+<div class="col-md-6 mb-3"><input class="form-control" placeholder="Email"></div>
+</div>
+<input class="form-control mb-3" placeholder="Subject">
+<textarea class="form-control mb-3" placeholder="Message"></textarea>
+<button class="btn btn-primary">Send Message</button>
+</form>
+
+</div>
+</section>
+
+<!-- JS -->
+<script>
+/* ===== TYPING ===== */
+const text="Full Stack Web Developer | Creating interactive websites & apps";
+let i=0;
+function type(){
+  if(i<text.length){
+    document.getElementById("typing").innerHTML+=text.charAt(i);
+    i++;
+    setTimeout(type,70);
+  }
+}
+type();
+
+/* ===== STAR ANIMATION ===== */
+const canvas=document.getElementById("starCanvas");
+const ctx=canvas.getContext("2d");
+let stars=[];
+
+function resize(){
+  canvas.width=window.innerWidth;
+  canvas.height=window.innerHeight;
+}
+resize();
+window.onresize=resize;
+
+for(let i=0;i<200;i++){
+  stars.push({
+    x:Math.random()*canvas.width,
+    y:Math.random()*canvas.height,
+    r:Math.random()*1.5,
+    s:Math.random()*0.6+0.2
+  });
+}
+
+function animateStars(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  ctx.fillStyle="white";
+  stars.forEach(star=>{
+    ctx.beginPath();
+    ctx.arc(star.x,star.y,star.r,0,Math.PI*2);
+    ctx.fill();
+    star.y+=star.s;
+    if(star.y>canvas.height){
+      star.y=0;
+      star.x=Math.random()*canvas.width;
+    }
+  });
+  requestAnimationFrame(animateStars);
+}
+animateStars();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
